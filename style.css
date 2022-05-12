@@ -21,8 +21,8 @@
   display: grid;
   grid-template-columns: repeat(16, 1fr);
 
-  width: 510px;
-  height: 510px;
+  width: 520px;
+  height: 520px;
 
   border: 1px solid #f3f3f3;
   box-shadow: var(--shadow);
