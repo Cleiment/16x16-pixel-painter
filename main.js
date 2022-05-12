@@ -287,5 +287,11 @@ const addColor = (position, color = 'skin') => {
 
 drawArt();
 
-document.getElementById('btn-rabbit-helmet').addEventListener('click', (e) => drawArt(rabbitHelmet));
-document.getElementById('btn-reset').addEventListener('click', (e) => drawArt());
+document.getElementById('btn-rabbit-helmet').addEventListener('click', (e) => {
+  artArray = rabbitHelmet;
+  drawArt()
+});
+document.getElementById('btn-reset').addEventListener('click', (e) => {
+  artArray = Array(rows * cols);
+  drawArt()
+});
