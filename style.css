@@ -1,0 +1,74 @@
+:root {
+  --shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+#arts {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+#arts>button {
+  margin-bottom: 8px;
+}
+
+#wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+
+  width: 510px;
+  height: 510px;
+
+  border: 1px solid #f3f3f3;
+  box-shadow: var(--shadow);
+}
+
+.art-pixel {
+  height: 30px;
+  width: 30px;
+  border: 1px solid #f5f5f5;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.skin {
+  background-color: rgb(255, 217, 196);
+}
+
+.btn {
+  padding: 10px 25px;
+  border-radius: 3px;
+  font-size: 14px;
+  background-color: transparent;
+  border: 1px solid #f3f3f3;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  box-shadow: var(--shadow);
+}
+
+#btn-rabbit-helmet {
+  background-color: rgb(255, 217, 196);
+  color: #2f2f2f;
+}
+
+#btn-rabbit-helmet:hover {
+  background-color: rgb(253, 193, 161);
+}
+
+#btn-reset {
+  background-color: #e7e7e7;
+  color: #2f2f2f;
+}
+
+#btn-rest {
+  background-color: #d7d7d7;
+}
